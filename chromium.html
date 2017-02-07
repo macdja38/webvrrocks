@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en" data-layout="secondary" data-browser="chromium">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#24aef4">
+      <link rel="stylesheet" href="/media/css/main.css">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="icon" sizes="256x256" href="/rocks/logo-256.png">
+    <link rel="icon" sizes="256x256" href="/rocks/logo-256.svg">
+    <link rel="mask-icon" href="/rocks/mask-84.svg" color="#24aef4">
+    <meta property="og:title" content="WebVR Rocks">
+    <meta property="og:site_name" content="WebVR Rocks">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://webvr.rocks/">
+    <meta property="og:description" content="Your guide to VR on the Web.">
+    <meta property="og:image" content="https://webvr.rocks/rocks/card.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@WebVRRocks">
+    <meta name="twitter:creator" content="@WebVRRocks">
+    <meta name="twitter:title" content="WebVR Rocks">
+    <meta name="twitter:description" content="Your guide to VR on the Web.">
+    <meta name="twitter:image" content="https://webvr.rocks/rocks/card.png">
+    <script>
+      (function () {
+        try { document.documentElement.dataset.newbie = parseInt(window.localStorage.visits, 10) < 4; } catch (e) {}
+      })();
+    </script>
+    <script src="https://cdn.rawgit.com/GoogleChrome/pwacompat/v1.0.0/pwacompat.min.js" async defer></script>
+    <meta charset="utf-8">
+    <title>Chromium • WebVR Rocks</title>
+  </head>
+  <body>
+    <header id="header" class="header" role="banner">
+      <div class="container section">
+<h1 class="site-title">
+  <a class="site-logo" href="/">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 11">
+  <path fill="#24aef4" d="M15.4 0H.6C.3 0 0 .3 0 .7v9.6c0 .3.3.7.6.7h14.8c.4 0 .6-.4.6-.8V.7c0-.4-.3-.7-.6-.7zM11 9H2V2h12v7h-3zm0-2c.828 0 1.5-.672 1.5-1.5S11.828 4 11 4s-1.5.672-1.5 1.5S10.172 7 11 7zM5 7c.828 0 1.5-.672 1.5-1.5S5.828 4 5 4s-1.5.672-1.5 1.5S4.172 7 5 7z"/>
+</svg>
+    <span class="rocks-wordmark">
+      <span class="rocks-wordmark-webvr">WebVR</span> <span class="rocks-wordmark-rocks">Rocks</span>
+    </span>
+  </a>
+</h1>
+
+  <p class="hidden-text"><a href="/" aria-controls="main" tabindex="0">&#xAB; Back to WebVR Rocks home</a></p>
+
+        <a class="browser-link" href="/chromium">
+          <h1 class="browser-name">Chromium</h1>
+          <img class="browser-icon" src="/chromium/icon.png" alt="Chromium" title="Chromium">
+        </a>
+
+        <p class="browser-intro"><a href="https://www.google.com/">Google</a>&rsquo;s open-source version of <a href="https://www.google.com/chrome/">Chrome</a></p>
+
+        <p class="message message-alert">
+          <strong>Warning:</strong> All <a href="#releases">Chromium WebVR builds posted here</a> are highly experimental and subject to change!
+        </p>
+
+        <div id="download" class="download dropdown-standalone dropdown-download dropdown-with-children">
+          <a href="https://drive.google.com/uc?export=download&amp;id=0BzudLt22BqGRQ01lc2FiSHhxOGM" class="button button-unstyled button-large button-download" data-download-name="chromium" data-download-id="0BzudLt22BqGRQ01lc2FiSHhxOGM">Download <svg xmlns="http://www.w3.org/2000/svg" fill="#111" viewBox="0 0 24 24">
+  <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+  <path fill="none" d="M0 0h24v24H0z"/>
+</svg> <span class="download-info c"><span class="download-date">Feb 1, 2017 12:34 PM</span> <span class="download-size">94 MB</span></span></a>
+
+          <span class="icon-arrow-down"></span>
+          <ul class="list-unstyled dropdown">
+            <li><a class="no-underline" href="https://drive.google.com/uc?export=download&amp;id=0BzudLt22BqGRQ01lc2FiSHhxOGM" data-download-name="chromium" data-download-id="0BzudLt22BqGRQ01lc2FiSHhxOGM">February 1, 2017</a></li>
+            <li><a class="no-underline" href="https://drive.google.com/uc?export=download&amp;id=0BzudLt22BqGRRElMNmVqQjJWS2c" data-download-name="chromium" data-download-id="0BzudLt22BqGRRElMNmVqQjJWS2c">December 23, 2016</a></li>
+            <li><a class="no-underline" href="https://drive.google.com/uc?export=download&amp;id=0BzudLt22BqGRc2lEWDg2NkptNzg" data-download-name="chromium" data-download-id="0BzudLt22BqGRc2lEWDg2NkptNzg">September 23, 2016</a></li>
+            <li><a class="no-underline" href="https://drive.google.com/uc?export=download&amp;id=0BzudLt22BqGRVzFKVWNSbFA5aXM" data-download-name="chromium" data-download-id="0BzudLt22BqGRVzFKVWNSbFA5aXM">September 17, 2016</a></li>
+            <li><a class="no-underline" href="https://drive.google.com/uc?export=download&amp;id=0BzudLt22BqGRcVNBWHR5OW0za1E" data-download-name="chromium" data-download-id="0BzudLt22BqGRcVNBWHR5OW0za1E">August 29, 2016</a></li>
+            <li><a class="no-underline" href="https://drive.google.com/uc?export=download&amp;id=0BzudLt22BqGRZUFhd0Q5M1FEd1U" data-download-name="chromium" data-download-id="0BzudLt22BqGRZUFhd0Q5M1FEd1U">August 28, 2016</a></li>
+            <li><a class="no-underline" href="https://drive.google.com/uc?export=download&amp;id=0BzudLt22BqGRQ0dvVGZHV2Njdkk" data-download-name="chromium" data-download-id="0BzudLt22BqGRQ0dvVGZHV2Njdkk">August 7, 2016</a></li>
+          </ul>
+        </div>
+        <p class="view-source">
+          <a href="https://chromium.googlesource.com/experimental/chromium/src/+/refs/wip/bajones/webvr_1" class="button-source no-underline">View source</a>
+        </p>
+      </div>
+    </header>
+
+    <main id="main" class="main" role="main">
+      <div class="container">
+
+        <section id="setup" class="section setup" data-section="setup">
+          <h2><a href="#setup">Instructions</a></h2>
+          <ol>
+            <li><a href="https://webvr.info/get-chrome/">Download the experimental build of Chromium with WebVR support</a>.</li>
+            <li>Find the <code>chromium_webvr_v1.1_win.zip</code> file in your <code>Downloads</code> directory, and extract all the contents.</li>
+            <li>In the output directory, find and launch the <code>chrome.exe</code> file.</li>
+            <li>In the URL bar, load <code>chrome://flags#enable-webvr</code> and toggle the <code>Enable WebVR flag</code>.</li>
+            <li>In the URL bar, load <code>chrome://flags#enable-gamepad-extensions</code> and toggle the <code>Enable Gamepad Extensions</code> flag.</li>
+            <li><span data-headset="htc-vive">Launch the <a href="https://www.vive.com/setup/">SteamVR</a> application.</span></li>
+            <li>Enjoy WebVR content!</li>
+          </ol>
+        </section>
+
+        <section id="demos" class="section demos" data-section="demos">
+          <h2><a href="#demos">Demos</a></h2>
+          <ul data-section="demos" class="matrix grid-flex-container">
+              <li itemprop="demo" itemscope itemtype="http://schema.org/" data-app-type="" data-slug="" class="grid-flex-cell-1of2" >
+    <div>
+      <div itemprop="details" class="demo-details">
+        <a itemprop="url" href="https://aframe.io/a-blast/" class="no-underline">
+          <div itemprop="image" style="background-image: url(/a_blast/poster.png)">
+          </div>
+          <span itemprop="name" class="demo-name">A-Blast</span>
+        </a>
+        <span itemprop="description">Save the world from the cutest creatures in the universe</span>
+      </div>
+    </div>
+  </li>
+
+              <li itemprop="demo" itemscope itemtype="http://schema.org/" data-app-type="" data-slug="" class="grid-flex-cell-1of2" >
+    <div>
+      <div itemprop="details" class="demo-details">
+        <a itemprop="url" href="https://aframe.io/a-painter/" class="no-underline">
+          <div itemprop="image" style="background-image: url(https://dl.airtable.com/RPPe979wRAil2X0OfUND_full_apainter.png)">
+          </div>
+          <span itemprop="name" class="demo-name">A-Painter</span>
+        </a>
+        <span itemprop="description">Paint and sketch in VR by Mozilla A-Frame team</span>
+      </div>
+    </div>
+  </li>
+
+              <li itemprop="demo" itemscope itemtype="http://schema.org/" data-app-type="" data-slug="" class="grid-flex-cell-1of2" >
+    <div>
+      <div itemprop="details" class="demo-details">
+        <a itemprop="url" href="https://christmasexperiments.com/2016/24/dark-haze/" class="no-underline">
+          <div itemprop="image" style="background-image: url(https://dl.airtable.com/63CkdQtS6OQszVONa4vr_full_dh1%2Clarge.2x.1482557323.jpg)">
+          </div>
+          <span itemprop="name" class="demo-name">Dark Haze</span>
+        </a>
+        <span itemprop="description">Where dust, smoke and other dry particles obscure the clarity of the sky</span>
+      </div>
+    </div>
+  </li>
+
+              <li itemprop="demo" itemscope itemtype="http://schema.org/" data-app-type="" data-slug="" class="grid-flex-cell-1of2" >
+    <div>
+      <div itemprop="details" class="demo-details">
+        <a itemprop="url" href="https://mozvr.com/puzzle-rain/" class="no-underline">
+          <div itemprop="image" style="background-image: url(/puzzle_rain/poster.png)">
+          </div>
+          <span itemprop="name" class="demo-name">Puzzle Rain</span>
+        </a>
+        <span itemprop="description">A musical WebVR journey for the HTC Vive</span>
+      </div>
+    </div>
+  </li>
+
+          </ul>
+        </section>
+
+        <section id="releases" class="section" data-section="releases">
+          <h2><a href="#releases">Latest version</a></h2>
+          <h4><a href="" itemprop="softwareApplication"></a></h4>
+          <article itemscope itemtype="http://schema.org/SoftwareApplication">
+            <dl>
+              <dt class="browser-type">Type</dt>
+              <dd>
+                <span class="applicationSubCategory">Experimental Browser Build</span>
+              </dd>
+              <dt class="browser-download">Download</dt>
+              <dd>
+                <a class="button button-outlined-approve button-download" href="https://drive.google.com/file/d/0BzudLt22BqGRQ01lc2FiSHhxOGM/view" itemprop="downloadUrl" data-download-name="chromium" data-download-id="">Download</a>
+              </dd>
+              <dt class="browser-version">Version</dt>
+              <dd>
+                <span class="version">2017-02-01</span>
+              </dd>
+              <dt class="browser-date-released">Date released</dt>
+              <dd>
+                <time itemprop="datePublished" datetime="2017-2-1T12:34:00Z">
+                  February 1, 2017
+                </time>
+              </dd>
+              <dt class="browser-file-size">File size</dt>
+              <dd>
+                <span itemprop="fileSize" content="94MB">94 MB</span>
+              </dd>
+              <dt class="browser-system-requirements">System requirements</dt>
+              <dd>
+                <span class="operatingSystems">Windows 7.1+</span>
+                <span class="processorRequirements">64-bit</span>
+              </dd>
+              <dt class="browser-authors">Authors</dt>
+              <dd>
+                <ul class="authors__list">
+                    <li class="authors__item">
+    <span class="authors__item__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <figure>
+        <a class="authors__item__url" href="https://twitter.com/tojiro" itemprop="url"><img itemprop="image" class="authors__item__gravatar" src="http://www.gravatar.com/avatar/0bdcb3845785bc5b032ae688d2d76bcb?s=256" alt="Brandon Jones" width="40"></a>
+        <figcaption><a class="authors__item__url" href="https://twitter.com/tojiro" itemprop="url"><span class="authors__item__url" itemprop="name">Brandon Jones</span></a> (<a href="https://www.google.com/" itemprop="organization">Google</a>)</figcaption>
+      </figure>
+    </span>
+  </li>
+
+                    <li class="authors__item">
+    <span class="authors__item__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <figure>
+        <a class="authors__item__url" href="https://twitter.com/klausweidner" itemprop="url"><img itemprop="image" class="authors__item__gravatar" src="https://avatars2.githubusercontent.com/u/1392351?size=256" alt="Klaus Weidner" width="40"></a>
+        <figcaption><a class="authors__item__url" href="https://twitter.com/klausweidner" itemprop="url"><span class="authors__item__url" itemprop="name">Klaus Weidner</span></a> (<a href="https://www.google.com/" itemprop="organization">Google</a>)</figcaption>
+      </figure>
+    </span>
+  </li>
+
+                </ul>
+              </dd>
+              <dt class="browser-release-notes">Release notes</dt>
+              <dd>
+                <ul class="release-notes">
+                  <li>Applies multiple optimizations on top of the version of WebVR publicly available in <a href="https://blog.chromium.org/2016/12/introducing-webvr-api-in-chrome-for.html">Chrome 56 beta</a>, primarily in the form of reducing texture copies. This gives significantly better performance and latency in most cases. Consider this a preview of performance targets for later versions of Chrome, with further possible improvements still to come.</li>
+                </ul>
+              </dd>
+            </dl>
+          </article>
+        </section>
+
+        <section id="compat" class="section compat" data-section="compat">
+          <h2><a href="#compat">Known issues</a></h2>
+          <p>These known issues apply to the <a href="#download">latest published build</a>. Where applicable, the detailed release notes below will list when historic known issues were fixed.</p>
+          <p class="note"><strong>Note:</strong> There is no installer for the experimental builds of Chromium. Once the contents of the <code>.zip</code> file is extracted, launch <code>chrome.exe</code> directly from the <code>chrome-bin</code> directory.</p>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th data-report-key="browserVersion">Version</th>
+                  <th data-report-key="browserBuildId">Browser build</th>
+                  <th data-report-key="headset">Headset</th>
+                  <th data-report-key="description">Description</th>
+                  <th data-report-key="dateReported">Reported</th>
+                  <th data-report-key="dateUpdated">Updated</th>
+                  <th data-report-key="status">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                        <tr data-report-type="bug"
+        itemprop="bug"
+        class="table-cell-error">
+      <td data-report-key="browserVersion"><span itemprop="userAgent" title="">Chromium <br> <small title="2016-12-23">(2016-12-23)</small></span></td>
+      <td data-report-key="browserBuildId"><span itemprop="buildId">2016-12-23</span></td>
+      <td data-report-key="headsets">
+          <span itemprop="headsets">
+              HTC Vive          </span>
+      </td>
+      <td data-report-key="description"><a href="https://crbug.com/687009" itemprop="description">WebVR crashes immediately on calling `vrDisplay.requestPresent()`</a></td>
+      <td data-report-key="dateReported"><time itemprop="dateReported" datetime="2017-01-31T03:27:42Z">Jan 31, 2017</time></td>
+      <td data-report-key="dateUpdated"><time itemprop="dateUpdated" datetime="2017-01-31T09:21:05">Jan 31, 2017</time></td>
+      <td data-report-key="status"><span itemprop="status">In progress</span></td>
+    </tr>
+
+                        <tr data-report-type="bug"
+        itemprop="bug"
+        class="table-cell-error">
+      <td data-report-key="browserVersion"><span itemprop="userAgent" title="">Chromium <br> <small title="2016-12-23">(2016-12-23)</small></span></td>
+      <td data-report-key="browserBuildId"><span itemprop="buildId">2016-12-23</span></td>
+      <td data-report-key="headsets">
+          <span itemprop="headsets">
+              Oculus Rift,               HTC Vive          </span>
+      </td>
+      <td data-report-key="description"><a href="https://github.com/toji/chrome-webvr-issues/issues/126" itemprop="description">The timestamp passed to the `requestAnimationFrame` callback is off by a factor of 1000</a></td>
+      <td data-report-key="dateReported"><time itemprop="dateReported" datetime="2017-01-05T22:33:54Z">Jan 5, 2017</time></td>
+      <td data-report-key="dateUpdated"><time itemprop="dateUpdated" datetime="2016-12-18T00:18:04Z">Jan 31, 2017</time></td>
+      <td data-report-key="status"><span itemprop="status">Unresolved</span></td>
+    </tr>
+
+                        <tr data-report-type="bug"
+        itemprop="bug"
+        class="table-cell-error">
+      <td data-report-key="browserVersion"><span itemprop="userAgent" title="">Chromium <br> <small title="2016-12-23">(2016-12-23)</small></span></td>
+      <td data-report-key="browserBuildId"><span itemprop="buildId">2016-12-23</span></td>
+      <td data-report-key="headsets">
+          <span itemprop="headsets">
+              HTC Vive          </span>
+      </td>
+      <td data-report-key="description"><a href="https://github.com/toji/chrome-webvr-issues/issues/73" itemprop="description">Scene wobbles as headset rotates</a></td>
+      <td data-report-key="dateReported"><time itemprop="dateReported" datetime="2016-06-11T18:35:02Z">Jun 11, 2016</time></td>
+      <td data-report-key="dateUpdated"><time itemprop="dateUpdated" datetime=""></time></td>
+      <td data-report-key="status"><span itemprop="status">Unresolved</span></td>
+    </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="info" class="section info" data-section="info>
+          <h2><a href="#info">Info</a></h2>
+          <dl>
+            <!--
+            <dt>How can I help out?</dt>
+            <dd></dd>
+            -->
+            <!--
+            <dt>How can I test sites?</dt>
+            <dd></dd>
+            -->
+            <dt>Which audio and video codecs are supported?</dt>
+            <dd>
+              <p>Because of licensing issues, only <a href="https://www.chromium.org/audio-video">these open codecs</a> are supported right now. Namely, MP3 and x264 are <strong>not</strong> supported. These formats are supported: Opus audio (<code>audio/opus</code>, <code>audio/ogg</code>), WebM (<code>video/webm</code>), Theora (<code>video/ogg</code>), Vorbis (<code>audio/vorbis</code>), VP8, VP9, and WAV.</p>
+            </dd>
+          </dl>
+        </section>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="section">
+        <p id="license" class="license">
+          <a class="no-underline" rel="license" href="http://creativecommons.org/licenses/by/4.0/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 42">
+  <path fill="#aab2ab" d="M3.14.508l113.354.2c1.583 0 2.998-.234 2.998 3.16l-.138 37.33H.28V3.73C.28 2.057.44.51 3.14.51z"/>
+  <path d="M117.752 0H2.247C1.007 0 0 1.008 0 2.246v39.247c0 .28.228.507.508.507h118.984c.28 0 .508-.227.508-.507V2.246C120 1.008 118.992 0 117.752 0zM2.247 1.015h115.505c.68 0 1.233.552 1.233 1.23v27.277H36.16c-3.026 5.47-8.856 9.186-15.547 9.186-6.693 0-12.52-3.71-15.546-9.186H1.015V2.246c0-.68.553-1.23 1.232-1.23z"/>
+  <path fill="#fff" d="M73.81 32.747c.314 0 .603.03.864.084.26.06.482.15.668.28.186.13.33.3.432.51.102.21.154.47.154.78 0 .34-.076.61-.23.84-.15.23-.375.41-.672.55.41.12.715.32.917.62.202.295.303.65.303 1.064 0 .334-.065.623-.195.867s-.3.443-.52.597c-.22.156-.47.27-.75.345-.28.077-.57.11-.87.11h-3.22v-6.62h3.12zm-.187 2.68c.26 0 .473-.063.64-.187.168-.123.252-.323.252-.6 0-.155-.03-.282-.084-.38-.05-.1-.13-.175-.22-.232-.09-.055-.2-.094-.32-.115-.12-.02-.24-.032-.37-.032h-1.37v1.55h1.48zm.085 2.81c.143 0 .28-.015.41-.043.13-.028.243-.075.343-.14.1-.064.18-.152.24-.264.06-.11.09-.253.09-.425 0-.34-.09-.583-.29-.728-.19-.145-.44-.218-.76-.218h-1.59v1.81h1.56zm2.795-5.49h1.633l1.55 2.616 1.542-2.616h1.624l-2.458 4.08v2.542h-1.46v-2.58l-2.43-4.05zm-42.25-13.14c.006 7.53-6.095 13.636-13.625 13.64-7.53.006-13.64-6.095-13.643-13.624v-.017C6.98 12.076 13.08 5.97 20.61 5.966c7.532-.006 13.64 6.094 13.644 13.624v.016z"/>
+  <path d="M31.703 8.502c3.024 3.023 4.536 6.725 4.536 11.104 0 4.38-1.49 8.043-4.46 10.988-3.16 3.102-6.88 4.653-11.18 4.653-4.25 0-7.91-1.538-10.99-4.614C6.53 27.557 5 23.883 5 19.606 5 15.33 6.536 11.63 9.612 8.502c2.997-3.025 6.66-4.537 10.987-4.537 4.38 0 8.08 1.512 11.1 4.537zM11.65 10.535c-2.56 2.582-3.836 5.605-3.836 9.075 0 3.47 1.265 6.467 3.794 8.996 2.53 2.53 5.54 3.794 9.036 3.794 3.495 0 6.532-1.277 9.114-3.832 2.452-2.374 3.678-5.358 3.678-8.958 0-3.572-1.246-6.603-3.737-9.094-2.49-2.49-5.51-3.735-9.06-3.735-3.55 0-6.55 1.26-9 3.76zm6.726 7.55c-.39-.852-.976-1.278-1.756-1.278-1.378 0-2.067.928-2.067 2.784 0 1.86.69 2.79 2.067 2.79.91 0 1.56-.45 1.95-1.35l1.912 1.02c-.91 1.62-2.277 2.43-4.1 2.43-1.405 0-2.53-.43-3.376-1.29-.846-.86-1.27-2.05-1.27-3.56 0-1.49.437-2.67 1.31-3.542.87-.874 1.957-1.31 3.26-1.31 1.925 0 3.304.76 4.138 2.275l-2.068 1.06zm8.99 0c-.392-.852-.965-1.278-1.72-1.278-1.406 0-2.11.928-2.11 2.784 0 1.86.704 2.79 2.11 2.79.912 0 1.55-.45 1.915-1.35l1.96 1.02c-.91 1.62-2.27 2.43-4.09 2.43-1.4 0-2.52-.43-3.37-1.29-.84-.86-1.26-2.05-1.26-3.56 0-1.49.43-2.67 1.29-3.542s1.95-1.31 3.28-1.31c1.925 0 3.3.76 4.13 2.275l-2.11 1.06z"/>
+  <g transform="matrix(.99377 0 0 .99367 -177.693 0)">
+    <circle cx="255.551" cy="15.313" r="10.807" fill="#fff"/>
+    <path d="M258.678 12.187c0-.416-.338-.754-.753-.754h-4.773c-.415 0-.753.338-.753.754v4.773h1.33v5.652h3.61V16.96h1.33v-4.773z"/>
+    <circle cx="255.539" cy="9.172" r="1.633"/>
+    <path fill-rule="evenodd" d="M255.524 3.407c-3.233 0-5.97 1.128-8.208 3.384-2.298 2.34-3.446 5.1-3.446 8.29 0 3.19 1.148 5.93 3.446 8.23s5.034 3.44 8.208 3.44c3.213 0 5.998-1.15 8.353-3.47 2.22-2.2 3.33-4.93 3.33-8.2 0-3.27-1.13-6.03-3.387-8.28-2.26-2.25-5.025-3.38-8.296-3.38zm.03 2.1c2.648 0 4.897.934 6.746 2.8 1.87 1.848 2.804 4.104 2.804 6.77 0 2.682-.915 4.91-2.745 6.68-1.93 1.905-4.2 2.858-6.81 2.858-2.61 0-4.86-.943-6.75-2.83-1.89-1.887-2.84-4.123-2.84-6.71 0-2.586.95-4.842 2.86-6.767 1.83-1.867 4.07-2.8 6.71-2.8z" clip-rule="evenodd"/>
+  </g>
+</svg>
+</a> <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">WebVR Rocks</span> <span class="by">by</span> <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/webvrrocks" property="cc:attributionName" rel="cc:attributionURL">WebVR Rocks authors</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/webvrrocks/webvrrocks" rel="dct:source">Source code</a> <b>&nbsp;&middot;&nbsp;</b> <a href="code_of_conduct.html">Code of Conduct</a>
+        </p>
+        <p id="edit-page" class="edit-page">
+          <a href="https://github.com/webvrrocks/webvrrocks/edit/master/public/chromium.html" title="Edit on GitHub" class="button button-primary button-outlined button-small">Edit on GitHub</a>
+        </p>
+      </div>
+    </footer>
+    <script src="/media/js/main.js"></script>
+  </body>
+</html>

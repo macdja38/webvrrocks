@@ -1,19 +1,21 @@
 {
   "@context": "http://schema.org",
   "@type": "SoftwareApplication",
-  "name": "Chromium",
-  "slug": "chromium",
-  "description": "Google's open-source version of Chrome",
-  "description_html": "<a href=\"https://www.google.com/\">Google</a>&rsquo;s open-source version of <a href=\"https://www.google.com/chrome/\">Chrome</a>",
+  "name": "Google Daydream",
+  "slug": "google_daydream",
+  "description": "Google's VR platform for Android phones",
+  "description_html": "<a href=\"https://www.google.com/\">Google</a>&rsquo;s VR platform for <a href=\"https://vr.google.com/daydream/phones/\">Android phones</a>",
   "operatingSystem": "Windows 7.1+",
   "processorRequirements": "IA64",
-  "logo": "/chromium/icon.png",
+  "logo": "/google_daydream/icon.png",
   "image": "",
   "screenshot": "",
-  "url": "/chromium",
-  "about": "/chromium",
+  "url": "/google_daydream",
+  "about": "/google_daydream",
   "sameAs": [
+    "https://webvr.rocks/google_daydream",
     "https://webvr.rocks/chrome",
+    "https://webvr.rocks/chrome_for_android",
     "https://webvr.info/get-chrome/"
   ],
   "creator": [
@@ -34,15 +36,15 @@
   "applicationCategory": [
     "Browser"
   ],
-  "releaseNotes": "/chromium/release-notes.json",
+  "releaseNotes": "/google_daydream/release_notes.json",
   "dateCreated": "",
   "datePublished": "",
-  "video": "https://webvr.rocks/chromium/video.json",
+  "video": "https://webvr.rocks/google_daydream/video.json",
   "downloadUrl": "https://docs.google.com/uc?id=0BzudLt22BqGRRElMNmVqQjJWS2c&export=download",
   "fileFormat": "application/zip",
-  "learningResourceType": "https://webvr.rocks/chromium",
-  "discussionUrl": "https://webvr.rocks/chromium#comments",
-  "softwareHelp": "https://webvr.rocks/chromium#help",
+  "learningResourceType": "https://webvr.rocks/google_daydream",
+  "discussionUrl": "https://webvr.rocks/google_daydream#comments",
+  "softwareHelp": "https://webvr.rocks/google_daydream#help",
   "version": "",
   "softwareRequirements": [
     "https://www3.oculus.com/setup/",
@@ -52,7 +54,7 @@
     "https://www3.oculus.com/setup/",
     "https://www.vive.com/us/setup/"
   ],
-  "fileSize": "93M",
+  "fileSize": "93 MB",
   "license": "",
   "contributor": [],
   "thumbnailUrl": "",

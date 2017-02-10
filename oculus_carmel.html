@@ -36,7 +36,7 @@
       <div class="container section">
 <h1 class="site-title">
   <a class="site-logo" href="/">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 11">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 11" width="200">
   <path fill="#24aef4" d="M15.4 0H.6C.3 0 0 .3 0 .7v9.6c0 .3.3.7.6.7h14.8c.4 0 .6-.4.6-.8V.7c0-.4-.3-.7-.6-.7zM11 9H2V2h12v7h-3zm0-2c.828 0 1.5-.672 1.5-1.5S11.828 4 11 4s-1.5.672-1.5 1.5S10.172 7 11 7zM5 7c.828 0 1.5-.672 1.5-1.5S5.828 4 5 4s-1.5.672-1.5 1.5S4.172 7 5 7z"/>
 </svg>
     <span class="rocks-wordmark">
@@ -47,12 +47,12 @@
 
   <p class="hidden-text"><a href="/" aria-controls="main" tabindex="0">&#xAB; Back to WebVR Rocks home</a></p>
 
-        <a class="browser-link" href="/oculus_carmel">
-          <h1 class="browser-name">Oculus Carmel</h1>
-          <img class="browser-icon" src="/oculus_carmel/icon.png" alt="Oculus Carmel" title="Oculus Carmel">
+        <a class="page-heading-link" href="/oculus_carmel">
+          <h1 class="browser-name page-heading">Oculus Carmel</h1>
+          <img class="browser-icon page-heading-icon" src="/oculus_carmel/icon.png" alt="Oculus Carmel" title="Oculus Carmel">
         </a>
 
-        <p class="browser-intro"><a href="https://www.oculus.com/">Oculus</a>&rsquo; <a href="https://www.oculus.com/experiences/gear-vr/1290985657630933/">WebVR-only browser</a> for <a href="https://www.samsung.com/global/galaxy/gear-vr/">Gear VR</a></p>
+        <p class="browser-intro page-intro"><a href="https://www.oculus.com/">Oculus</a>&rsquo; <a href="https://www.oculus.com/experiences/gear-vr/1290985657630933/">WebVR-only browser</a> for <a href="https://www.samsung.com/global/galaxy/gear-vr/">Gear VR</a></p>
 
         <figure class="media">
           <a href="https://www.oculus.com/experiences/gear-vr/1290985657630933/"><img src="https://dl.airtable.com/ybEJm6RVTFqC0XvhrX6H_full_12410271_1498109746883523_7443893749555396608_n.jpg" alt="Oculus Carmel" width="450"></a>
@@ -73,23 +73,29 @@
 
         <section id="setup" class="section setup" data-section="setup">
           <h2><a href="#setup">Instructions</a></h2>
-          <ol>
+          <ol class="bullets-light">
             <li>
-              <p>Search for and <strong>install <a href="https://www.oculus.com/experiences/gear-vr/1290985657630933/">Carmel Developer Preview</a></strong> from the <strong>Oculus Gear VR store</strong>.</p>
-              <figure class="media-outlined">
-                <img src="oculus_carmel/app.png" width="200">
-                <figcaption>Oculus Carmel install screen</figcaption>
-              </figure>
+              <span>
+                <p>Search for and <strong>install <a href="https://www.oculus.com/experiences/gear-vr/1290985657630933/">Carmel Developer Preview</a></strong> from the <strong>Oculus Gear VR store</strong>.</p>
+                <figure class="media-outlined">
+                  <img src="oculus_carmel/app.png" width="200" alt="Oculus Carmel install screen">
+                  <figcaption>Oculus Carmel install screen</figcaption>
+                </figure>
+              </span>
             </li>
             <li>
-              Launch <strong>Carmel Developer Preview</strong> from your <strong>Gear VR Library</strong>.
+              <span>
+                Launch <strong>Carmel Developer Preview</strong> from your <strong>Gear VR Library</strong>.
+              </span>
             </li>
             <li>
-              <p><stong>Enjoy the included WebVR demos!</stong></p>
-              <figure class="media-outlined">
-                <img src="https://dl.airtable.com/ZtmdSF5gRBqzuICpspK6_full_12386444_1799525440318007_1635011178193223680_n.jpg" width="300">
-                <figcaption>Launch Carmel to browse these WebVR demos</figcaption>
-              </figure>
+              <span>
+                <p><stong>Enjoy the included WebVR demos!</stong></p>
+                <figure class="media-outlined">
+                  <img src="https://dl.airtable.com/ZtmdSF5gRBqzuICpspK6_full_12386444_1799525440318007_1635011178193223680_n.jpg" width="300" alt="Oculus Carmel demos">
+                  <figcaption>Launch Carmel to browse these WebVR demos</figcaption>
+                </figure>
+              </span>
             </li>
           </ol>
         </section>
@@ -117,9 +123,9 @@
               </dd>
               <dt class="browser-release-notes">Release notes</dt>
               <dd>
-                <ul class="release-notes">
-                  <li>A preview of the new VR browser from Oculus, code named "Carmel." This release focuses on running 3D WebVR API content in VR with comprehensive 2D support planned for a later release. Check out WebVR projects from other developers and test your own experiences.</li>
-                  <li>Carmel browser does not yet have any browser UI.  Navigating to a arbitrary URL can be done using the <code>ovrweb</code> protocol to do so. For instructions, see <a href="https://developer3.oculus.com/documentation/vrweb/latest/concepts/carmel-launching-content/">Launching Your Content</a> on the Oculus VR web resource.</li>
+                <ul class="release-notes bullets-light">
+                  <li><span>A preview of the new VR browser from Oculus, code named &ldquo;Carmel.&rdquo; This release focuses on running 3D, WebVR API content in VR with comprehensive 2D support planned for a later release. Check out WebVR projects from other developers and test your own experiences.</span></li>
+                  <li><span>Carmel browser does not yet have any browser UI. Navigating to an arbitrary URL can be done using the <code>ovrweb</code> protocol to do so. For instructions, see <a href="https://developer3.oculus.com/documentation/vrweb/latest/concepts/carmel-launching-content/">Launching Your Content</a> on the Oculus VR web resource.</span></li>
                 </ul>
               </dd>
             </dl>
@@ -128,7 +134,7 @@
 
         <section id="info" class="section info" data-section="info">
           <h2><a href="#info">Links</a></h2>
-          <ul>
+          <ul class="bullets-light">
             <li><a href="https://developer.oculus.com/webvr/">Oculus WebVR Developer Hub</a></li>
             <li><a href="https://developer.oculus.com/blog/introducing-the-react-vr-pre-release/">React VR Pre-release</a></li>
             <li><a href="https://github.com/OculusVR/ovrui">OVRUI toolkit</a></li>
@@ -141,7 +147,7 @@
     <footer id="footer" class="footer">
       <div class="section">
         <p id="license" class="license">
-          <a class="no-underline" rel="license" href="http://creativecommons.org/licenses/by/4.0/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 42">
+          <a class="no-underline" rel="license" href="http://creativecommons.org/licenses/by/4.0/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 42" width="100">
   <path fill="#aab2ab" d="M3.14.508l113.354.2c1.583 0 2.998-.234 2.998 3.16l-.138 37.33H.28V3.73C.28 2.057.44.51 3.14.51z"/>
   <path d="M117.752 0H2.247C1.007 0 0 1.008 0 2.246v39.247c0 .28.228.507.508.507h118.984c.28 0 .508-.227.508-.507V2.246C120 1.008 118.992 0 117.752 0zM2.247 1.015h115.505c.68 0 1.233.552 1.233 1.23v27.277H36.16c-3.026 5.47-8.856 9.186-15.547 9.186-6.693 0-12.52-3.71-15.546-9.186H1.015V2.246c0-.68.553-1.23 1.232-1.23z"/>
   <path fill="#fff" d="M73.81 32.747c.314 0 .603.03.864.084.26.06.482.15.668.28.186.13.33.3.432.51.102.21.154.47.154.78 0 .34-.076.61-.23.84-.15.23-.375.41-.672.55.41.12.715.32.917.62.202.295.303.65.303 1.064 0 .334-.065.623-.195.867s-.3.443-.52.597c-.22.156-.47.27-.75.345-.28.077-.57.11-.87.11h-3.22v-6.62h3.12zm-.187 2.68c.26 0 .473-.063.64-.187.168-.123.252-.323.252-.6 0-.155-.03-.282-.084-.38-.05-.1-.13-.175-.22-.232-.09-.055-.2-.094-.32-.115-.12-.02-.24-.032-.37-.032h-1.37v1.55h1.48zm.085 2.81c.143 0 .28-.015.41-.043.13-.028.243-.075.343-.14.1-.064.18-.152.24-.264.06-.11.09-.253.09-.425 0-.34-.09-.583-.29-.728-.19-.145-.44-.218-.76-.218h-1.59v1.81h1.56zm2.795-5.49h1.633l1.55 2.616 1.542-2.616h1.624l-2.458 4.08v2.542h-1.46v-2.58l-2.43-4.05zm-42.25-13.14c.006 7.53-6.095 13.636-13.625 13.64-7.53.006-13.64-6.095-13.643-13.624v-.017C6.98 12.076 13.08 5.97 20.61 5.966c7.532-.006 13.64 6.094 13.644 13.624v.016z"/>

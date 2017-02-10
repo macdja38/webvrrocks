@@ -1,40 +1,35 @@
 {
   "@context": "http://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Chromium",
-  "slug": "chromium",
-  "description": "Google's open-source version of Chrome",
-  "description_html": "<a href=\"https://www.google.com/\">Google</a>&rsquo;s open-source version of <a href=\"https://www.google.com/chrome/\">Chrome</a>",
+  "@type": "Product",
+  "name": "HTC Vive",
+  "slug": "htc_vive",
+  "description": "Roomscale VR, specially designed for SteamVR (OpenVR)",
+  "description_html": "Roomscale VR, specially designed for <a href=\"http://store.steampowered.com/steamvr\">SteamVR</a> (<a href=\"https://github.com/ValveSoftware/openvr\">OpenVR</a>)",
   "operatingSystem": "Windows 7.1+",
   "processorRequirements": "IA64",
-  "logo": "/chromium/icon.png",
-  "image": "",
+  "logo": "/htc_vive/logo.png",
+  "image": "/htc_vive/photo.png",
+  "pictogram": "/htc_vive/pictogram.svg",
   "screenshot": "",
-  "url": "/chromium",
-  "about": "/chromium",
-  "sameAs": [
-    "https://webvr.rocks/chrome",
-    "https://webvr.info/get-chrome/"
-  ],
+  "url": "/htc_vive",
+  "about": "/htc_vive",
   "creator": [
     {
-      "@type": "Person",
-      "name": "Brandon Jones",
-      "sameAs": "https://webvr.rocks/people/tojiro.json"
-    }
-  ],
-  "accountablePerson": [
+      "@type": "Company",
+      "name": "HTC",
+      "sameAs": "https://www.htc.com/"
+    },
     {
-      "@type": "Person",
-      "name": "Klaus Weidner",
-      "sameAs": "https://webvr.rocks/people/klausweidner.json"
+      "@type": "Company",
+      "name": "Valve Corporation",
+      "sameAs": "http://www.valvesoftware.com/"
     }
   ],
-  "keywords": "browser",
+  "keywords": "headset",
   "applicationCategory": [
-    "Browser"
+    "Headset"
   ],
-  "releaseNotes": "/chromium/release-notes.json",
+  "releaseNotes": "/htc_vive/release_notes.json",
   "dateCreated": "",
   "datePublished": "",
   "video": "https://webvr.rocks/chromium/video.json",
@@ -52,7 +47,7 @@
     "https://www3.oculus.com/setup/",
     "https://www.vive.com/us/setup/"
   ],
-  "fileSize": "93M",
+  "fileSize": "93 MB",
   "license": "",
   "contributor": [],
   "thumbnailUrl": "",

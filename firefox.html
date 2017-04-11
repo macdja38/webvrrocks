@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-layout="secondary" data-browser="firefox">
+<html lang="en" data-layout="secondary browser firefox" data-browser="firefox" data-page="firefox.html">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +23,9 @@
     <meta name="twitter:title" content="WebVR Rocks">
     <meta name="twitter:description" content="Your guide to VR on the Web.">
     <meta name="twitter:image" content="https://webvr.rocks/rocks/card.png">
+
+    <link rel="canonical" href="https://webvr.rocks/">
+
     <script>
       (function () {
         try { document.documentElement.dataset.newbie = parseInt(window.localStorage.visits, 10) < 4; } catch (e) {}
@@ -52,14 +55,16 @@
           <img class="browser-icon page-heading-icon" src="/firefox/icon-nightly.png" alt="Firefox" title="Firefox">
         </a>
 
-        <p class="browser-intro page-intro"><a href="https://www.mozilla.org/">Mozilla</a>&rsquo;s <a href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly">bleeding-edge version</a> of <a href="https://www.mozilla.org/en-US/firefox/">Firefox</a></p>
+          <p class="browser-intro page-intro"><a href="https://www.mozilla.org/">Mozilla</a>&rsquo;s <a href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly">bleeding-edge version</a> of <a href="https://www.mozilla.org/en-US/firefox/">Firefox</a></p>
 
-          <p class="message message-alert">
-            <strong>Warning:</strong> All <a href="#releases">Firefox Nightly releases</a> are highly experimental and subject to change!
-          </p>
 
 <section class="notifications" id="notifications">
-        <div class="message message-success" aria-expanded="true" id="message-firefox-1">
+        <div class="message message-alert message-pinned" aria-expanded="true" id="message-firefox-1">
+        <p>
+            <strong>Warning:</strong> WebVR support in <a href="#releases">Firefox Nightly</a> is experimental and subject to change
+        </p>
+      </div>
+      <div class="message message-success" aria-expanded="true" id="message-firefox-2">
         <p>
             <a href="/firefox#download">Latest Firefox Nightly update</a> now supports <a href="https://www.oculus.com/rift/#u_0_g">Oculus Touch</a> controllers!
         </p>
@@ -67,38 +72,54 @@
 
 </section>
 
+
         <div id="download" class="download dropdown-standalone dropdown-download">
           <a href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly" itemprop="downloadUrl" class="button button-unstyled button-large button-download" data-download-name="firefox" data-download-id="20170308030207">Download <svg xmlns="http://www.w3.org/2000/svg" fill="#111" viewBox="0 0 24 24">
   <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
   <path fill="none" d="M0 0h24v24H0z"/>
-</svg> <span class="download-info c"><span class="download-date">Mar 8, 2017, 12:38 PM</span> <span class="download-size">46 MB</span></span></a>
+</svg>              <span class="download-info c">
+                <span class="download-date">Mar 8, 2017, 12:38 PM</span>                  <span class="download-size">46 MB</span></span>
+</a>
         </div>
-        <p class="view-source">
-          <a href="https://dxr.mozilla.org/mozilla-central/source/dom/vr" class="button-source no-underline">View source</a>
-        </p>
+
+          <p class="view-source">
+            <a href="https://dxr.mozilla.org/mozilla-central/source/dom/vr" class="button-source no-underline">View source</a>
+          </p>
       </div>
     </header>
 
     <main id="main" class="main" role="main">
       <div class="container">
-        <section id="setup" class="section setup" data-section="setup">
-          <h2><a href="#setup">Setup Instructions</a></h2>
-          <ol class="bullets-light">
-            <li><span>Download and launch <a href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly">Firefox Nightly</a>.</span></li>
-            <li data-headset="htc_vive"><span><a href="https://github.com/ValveSoftware/openvr/raw/v1.0.6/bin/win64/openvr_api.dll">Download version 1.0.6 (64-bit) of the <strong><code>openvr_api.dll</code></strong> file</a> from the <a href="https://github.com/ValveSoftware/openvr/tree/v1.0.6">OpenVR GitHub repository</a>.</span></li>
-            <li data-headset="htc_vive"><span>Save the <code>openvr_api.dll</code> file somewhere on your computer where the user running Firefox can read it (e.g., <code>c:\openvr\</code>).</span></li>
-            <li data-headset="htc_vive"><span>In Firefox Nightly, navigate to <code>about:config</code>; change the value of <code>dom.vr.openvr.enabled</code> to <code>true</code> and <code>gfx.vr.openvr-runtime</code> to the full path of the <code>openvr_api.dll</code> file (e.g., <code>c:\openvr\openvr_api.dll</code>).</span></li>
-            <li data-headset="oculus_rift"><span>Ensure that your Oculus Home settings allow for <a href="https://blog.mozvr.com/oculus-home-rift-cv1-webvr/#enablingunknownsources">Unknown Sources</a>.</span></li>
-            <li><span>For PCs (especially laptops) using Nvidia chipsets, there are several methods of <a href="https://alteredqualia.com/texts/optimus/">enabling the discrete GPU</a>. One way is from the <a href="https://www.nvidia.com/Download/Find.aspx">NVIDIA Control Panel</a>: Load <code>3D Settings</code> <code>&gt;</code> <code>Manage 3D Settings</code> <code>&gt;</code> <code>Program Settings</code> tab, and select <strong>Mozilla Firefox (firefox.exe)</strong> (with the blue Nightly icon) as the program to customize, and select <strong>&ldquo;High-performance NVIDIA processor"</strong> as the preferred graphics processor.</span></li>
-            <li><span>Restart Firefox Nightly.</span></li>
-            <li><span>Enjoy WebVR content!</span></li>
-          </ol>
-        </section>
+          <section id="setup" class="section setup" data-section="setup">
+            <h2><a href="#setup">Setup instructions</a></h2>
 
-        <section id="demos" class="section demos" data-section="demos">
-          <h2><a href="#demos">Demos</a></h2>
-          <ul data-section="demos" class="matrix grid-flex-container">
-              <li itemprop="demo" itemscope itemtype="http://schema.org/" data-app-type="" data-slug="" class="grid-flex-cell-1of2" >
+  <ol class="bullets-light">
+    <li><span>Download and launch <a href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly">Firefox Nightly</a>.</span></li>
+    <li data-headset="htc_vive"><span><a href="https://github.com/ValveSoftware/openvr/raw/v1.0.6/bin/win64/openvr_api.dll">Download version 1.0.6 (64-bit) of the <strong><code>openvr_api.dll</code></strong> file</a> from the <a href="https://github.com/ValveSoftware/openvr/tree/v1.0.6">OpenVR GitHub repository</a>.</span></li>
+    <li data-headset="htc_vive"><span>Save the <code>openvr_api.dll</code> file somewhere on your computer where the user running Firefox can read it (e.g., <code>c:\openvr\</code>).</span></li>
+    <li data-headset="htc_vive"><span>In Firefox Nightly, navigate to <code>about:config</code>; change the value of <code>dom.vr.openvr.enabled</code> to <code>true</code> and <code>gfx.vr.openvr-runtime</code> to the full path of the <code>openvr_api.dll</code> file (e.g., <code>c:\openvr\openvr_api.dll</code>).</span></li>
+    <li data-headset="oculus_rift"><span>Ensure that your Oculus Home settings allow for <a href="https://blog.mozvr.com/oculus-home-rift-cv1-webvr/#enablingunknownsources">Unknown Sources</a>.</span></li>
+    <li><span>For PCs (especially laptops) using Nvidia chipsets, there are several methods of <a href="https://alteredqualia.com/texts/optimus/">enabling the discrete GPU</a>. One way is from the <a href="https://www.nvidia.com/Download/Find.aspx">NVIDIA Control Panel</a>: Load <code>3D Settings</code> <code>&gt;</code> <code>Manage 3D Settings</code> <code>&gt;</code> <code>Program Settings</code> tab, and select <strong>Mozilla Firefox (firefox.exe)</strong> (with the blue Nightly icon) as the program to customize, and select <strong>&ldquo;High-performance NVIDIA processor"</strong> as the preferred graphics processor.</span></li>
+    <li><span>Restart Firefox Nightly.</span></li>
+    <li><span>Enjoy WebVR content!</span></li>
+  </ol>
+          </section>
+
+          <section id="headsets" class="section headsets" data-section="headsets">
+            <h2><a href="#headsets">Supported headsets</a></h2>
+
+  <ul class="bullets-light">
+    <li><span><a href="/htc_vive" itemprop="aboutUrl">HTC Vive</a></span></li>
+    <li><span><a href="" itemprop="aboutUrl">Oculus Rift</a></span></li>
+  </ul>
+          </section>
+
+          <section id="demos" class="section demos" data-section="demos">
+            <h2><a href="#demos">Demos</a></h2>
+            <p class="demos-suggest"><a href="/demos/submit">Suggest a demo</a></p>
+
+            <ul data-section="demos" class="matrix grid-flex-container">
+    <li itemprop="demo" itemscope itemtype="http://schema.org/" data-app-type="" data-slug="" class="grid-flex-cell-1of2" >
     <div>
       <div itemprop="details" class="demo-details">
         <a itemprop="url" href="https://aframe.io/a-painter/" class="no-underline">
@@ -111,7 +132,7 @@
     </div>
   </li>
 
-              <li itemprop="demo" itemscope itemtype="http://schema.org/" data-app-type="" data-slug="" class="grid-flex-cell-1of2" >
+    <li itemprop="demo" itemscope itemtype="http://schema.org/" data-app-type="" data-slug="" class="grid-flex-cell-1of2" >
     <div>
       <div itemprop="details" class="demo-details">
         <a itemprop="url" href="https://aframe.io/a-blast/" class="no-underline">
@@ -124,7 +145,7 @@
     </div>
   </li>
 
-              <li itemprop="demo" itemscope itemtype="http://schema.org/" data-app-type="" data-slug="" class="grid-flex-cell-1of2" >
+    <li itemprop="demo" itemscope itemtype="http://schema.org/" data-app-type="" data-slug="" class="grid-flex-cell-1of2" >
     <div>
       <div itemprop="details" class="demo-details">
         <a itemprop="url" href="https://mozvr.com/puzzle-rain/" class="no-underline">
@@ -137,7 +158,7 @@
     </div>
   </li>
 
-              <li itemprop="demo" itemscope itemtype="http://schema.org/" data-app-type="" data-slug="" class="grid-flex-cell-1of2" >
+    <li itemprop="demo" itemscope itemtype="http://schema.org/" data-app-type="" data-slug="" class="grid-flex-cell-1of2" >
     <div>
       <div itemprop="details" class="demo-details">
         <a itemprop="url" href="https://jonathanzwhite.github.io/stagevr/" class="no-underline">
@@ -150,48 +171,48 @@
     </div>
   </li>
 
-          </ul>
-        </section>
+            </ul>
+          </section>
 
-        <section id="releases" class="section releases" data-section="releases">
-          <h2><a href="#releases">Latest version</a></h2>
-          <h3><a href="" itemprop="softwareApplication"></a></h3>
-          <article itemscope itemtype="http://schema.org/SoftwareApplication">
-            <dl>
-              <dt class="browser-type">Type</dt>
-              <dd>
-                <span class="applicationSubCategory">Browser Build</span>
-              </dd>
-              <dt class="browser-download">Download</dt>
-              <dd>
-                <a class="button button-outlined-approve button-download" href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly" itemprop="downloadUrl" data-download-name="firefox" data-download-id="20170308030207">Download</a>
-              </dd>
-              <dt class="browser-version">Version</dt>
-              <dd>
-                <span itemprop="version" class="version" content="20170308030207">20170308030207</span>
-              </dd>
-              <dt class="browser-date-published">Date released</dt>
-              <dd>
-                <time itemprop="datePublished" datetime="2017-03-08T20:38:00.000Z" title="2017-03-08T20:38:00.000Z">
-                  Mar 8, 2017, 12:38 PM
-                </time>
-              </dd>
-              <dt class="browser-file-size">File size</dt>
-              <dd>
-                <span itemprop="fileSize" content="46 MB">46 MB</span>
-              </dd>
-              <dt class="browser-system-requirements">System requirements</dt>
-              <dd>
-                <span class="operatingSystems" content=""></span>
-                  <span class="processorRequirements">
-                    64-bit
-                    
-                  </span>
-              </dd>
-              <dt class="browser-authors">Authors</dt>
-              <dd class="not-copy">
-                <ul class="authors-list">
-                    <li class="authors__item">
+          <section id="releases" class="section releases" data-section="releases">
+            <h2><a href="#releases">Latest version</a></h2>
+            <h3><a href="" itemprop="softwareApplication"></a></h3>
+            <article itemscope itemtype="http://schema.org/SoftwareApplication">
+              <dl>
+                <dt class="browser-type">Type</dt>
+                <dd>
+                  <span class="applicationSubCategory">Browser Build</span>
+                </dd>
+                <dt class="browser-download">Download</dt>
+                <dd>
+                  <a class="button button-outlined-approve button-download" href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly" itemprop="downloadUrl" data-download-name="firefox" data-download-id="20170308030207">Download</a>
+                </dd>
+                <dt class="browser-version">Version</dt>
+                <dd>
+                  <span itemprop="version" class="version" content="20170308030207">20170308030207</span>
+                </dd>
+                  <dt class="browser-date-published">Date released</dt>
+                  <dd>
+                    <time itemprop="datePublished" datetime="2017-03-08T20:38:00.000Z" title="2017-03-08T20:38:00.000Z">
+                      Mar 8, 2017, 12:38 PM
+                    </time>
+                  </dd>
+                <dt class="browser-file-size">File size</dt>
+                <dd>
+                    <span itemprop="fileSize" content="46 MB">46 MB</span>
+                </dd>
+                <dt class="browser-system-requirements">System requirements</dt>
+                <dd>
+                  <span class="operatingSystems" content=""></span>
+                    <span class="processorRequirements">
+                      64-bit
+                    </span>
+                </dd>
+
+  <dt class="browser-authors">Authors</dt>
+  <dd class="not-copy">
+    <ul class="authors-list">
+        <li class="authors__item">
     <span class="authors__item__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
       <figure>
         <a class="authors__item__url" href="https://twitter.com/kearwoodgilbert" itemprop="url"><img itemprop="image" class="authors__item__gravatar" src="https://mozvr.com/assets/img/team/kip.jpg" alt="Kearwood &quot;Kip&quot; Gilbert" width="40"></a>
@@ -200,7 +221,7 @@
     </span>
   </li>
 
-                    <li class="authors__item">
+        <li class="authors__item">
     <span class="authors__item__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
       <figure>
         <a class="authors__item__url" href="https://twitter.com/daoshengmu" itemprop="url"><img itemprop="image" class="authors__item__gravatar" src="https://mozvr.com/assets/img/team/daosheng.jpg" alt="Daosheng Mu" width="40"></a>
@@ -209,31 +230,32 @@
     </span>
   </li>
 
-                </ul>
-              </dd>
-            </dl>
-          </article>
-        </section>
+    </ul>
+  </dd>
+              </dl>
+            </article>
+          </section>
 
-        <section id="compat" class="section compat" data-section="compat">
-          <h2><a href="#compat">Known issues</a></h2>
-          <div class="table-responsive">
-            <table>
-              <thead>
-                <tr>
-                  <th data-report-key="browserVersion">Version</th>
-                  <th data-report-key="browserBuildId">Browser build</th>
-                  <th data-report-key="headset">Headset</th>
-                  <th data-report-key="description">Description</th>
-                  <th data-report-key="dateReported">Reported</th>
-                  <th data-report-key="dateUpdated">Updated</th>
-                  <th data-report-key="status">Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                      <tr data-report-type="bug"
+          <section id="compat" class="section compat" data-section="compat">
+            <h2><a href="#compat">Known issues</a></h2>
+            <div class="table-responsive">
+              <table>
+                <thead>
+                  <tr>
+                    <th data-report-key="browserVersion">Version</th>
+                    <th data-report-key="browserBuildId">Browser build</th>
+                    <th data-report-key="headset">Headset</th>
+                    <th data-report-key="description">Description</th>
+                    <th data-report-key="dateReported">Reported</th>
+                    <th data-report-key="dateUpdated">Updated</th>
+                    <th data-report-key="status">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                        <tr data-report-type="bug"
         itemprop="bug"
-        class="table-cell-error">
+        class="table-cell-error"
+        data-archived="false">
       <td data-report-key="browserVersion"><span itemprop="userAgent" title="Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0">Nightly 50.0 <br> <small title="2016-11-04">(2016-11-04)</small></span></td>
       <td data-report-key="browserBuildId"><span itemprop="buildId">2016-11-04</span></td>
       <td data-report-key="headsets">
@@ -246,9 +268,10 @@
       <td data-report-key="status"><span itemprop="status">Needs STR</span></td>
     </tr>
 
-                      <tr data-report-type="feature"
+                        <tr data-report-type="feature"
         itemprop="feature"
-        class="table-cell-alert">
+        class="table-cell-alert"
+        data-archived="false">
       <td data-report-key="browserVersion"></td>
       <td data-report-key="browserBuildId"><span itemprop="buildId"></span></td>
       <td data-report-key="headsets">
@@ -261,13 +284,14 @@
       <td data-report-key="status"><span itemprop="status">TBD</span></td>
     </tr>
 
-                  
-              </tbody>
-            </table>
-          </div>
-        </section>
+                    
 
-        <!-- <section id="info" class="section info" data-section="info"></section> -->
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+
       </div>
     </main>
 

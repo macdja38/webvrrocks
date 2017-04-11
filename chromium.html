@@ -23,6 +23,9 @@
     <meta name="twitter:title" content="WebVR Rocks">
     <meta name="twitter:description" content="Your guide to VR on the Web.">
     <meta name="twitter:image" content="https://webvr.rocks/rocks/card.png">
+
+    <link rel="canonical" href="https://webvr.rocks/">
+
     <script>
       (function () {
         try { document.documentElement.dataset.newbie = parseInt(window.localStorage.visits, 10) < 4; } catch (e) {}
@@ -55,14 +58,11 @@
 
         <p class="browser-intro page-intro"><a href="https://www.google.com/">Google</a>&rsquo;s open-source version of <a href="https://www.google.com/chrome/">Chrome</a></p>
 
-          <p class="message message-alert">
-            <strong>Warning:</strong> All <a href="#releases">Chromium WebVR builds posted here</a> are highly experimental and subject to change!
-          </p>
 
 <section class="notifications" id="notifications">
-        <div class="message message-success" aria-expanded="true" id="message-chromium-1">
+        <div class="message message-alert message-pinned" aria-expanded="true" id="message-chromium-1">
         <p>
-            <a href="/chromium#download">Latest Chromium Windows build</a> now works again for the <a href="/htc_vive">HTC Vive</a>!
+            <strong>Warning:</strong> All <a href="#releases">Chromium WebVR builds posted here</a> are highly experimental and subject to change!
         </p>
       </div>
 
@@ -251,7 +251,8 @@
               <tbody>
                         <tr data-report-type="bug"
         itemprop="bug"
-        class="table-cell-error">
+        class="table-cell-error"
+        data-archived="false">
       <td data-report-key="browserVersion"><span itemprop="userAgent" title="">Chromium <br> <small title="2016-12-23">(2016-12-23)</small></span></td>
       <td data-report-key="browserBuildId"><span itemprop="buildId">2016-12-23</span></td>
       <td data-report-key="headsets">
@@ -266,7 +267,8 @@
 
                         <tr data-report-type="bug"
         itemprop="bug"
-        class="table-cell-success">
+        class="table-cell-success"
+        data-archived="true">
       <td data-report-key="browserVersion"><span itemprop="userAgent" title="">Chromium <br> <small title="2016-12-23">(2016-12-23)</small></span></td>
       <td data-report-key="browserBuildId"><span itemprop="buildId">2016-12-23</span></td>
       <td data-report-key="headsets">
@@ -281,7 +283,8 @@
 
                         <tr data-report-type="bug"
         itemprop="bug"
-        class="table-cell-success">
+        class="table-cell-success"
+        data-archived="true">
       <td data-report-key="browserVersion"><span itemprop="userAgent" title="">Chromium <br> <small title="2016-12-23">(2016-12-23)</small></span></td>
       <td data-report-key="browserBuildId"><span itemprop="buildId">2016-12-23</span></td>
       <td data-report-key="headsets">

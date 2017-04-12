@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-layout="secondary" data-browser="microsoft_edge">
+<html lang="en" data-layout="secondary browser microsoft_edge" data-browser="microsoft_edge" data-page="microsoft_edge.html">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,35 +55,63 @@
           <img class="browser-icon page-heading-icon" src="/microsoft_edge/icon.png" alt="Microsoft Edge" title="Microsoft Edge">
         </a>
 
-        <p class="browser-intro page-intro"><a href="https://www.microsoft.com/">Microsoft</a>&rsquo;s <a href="https://www.microsoft.com/en-us/windows/get-windows-10">Windows 10</a> <a href="https://www.microsoft.com/windows/microsoft-edge">browser</a>, with upcoming support for <a href="https://developer.microsoft.com/en-us/windows/holographic">Windows Holographic</a></p>
+          <p class="browser-intro page-intro"><a href="https://www.microsoft.com/">Microsoft</a>&rsquo;s <a href="https://www.microsoft.com/en-us/windows/get-windows-10">Windows 10</a> <a href="https://www.microsoft.com/windows/microsoft-edge">browser</a>.</p>
+
+
+<section class="notifications" id="notifications">
+        <div class="message message-success" aria-expanded="true" id="message-microsoft_edge-1">
+        <p>
+            As of the Windows 10 Creators update, Edge browser now <a href="https://blogs.windows.com/msedgedev/2017/04/11/introducing-edgehtml-15/#8e8xdJQ1oybkrxB8.97">supports WebVR 1.1</a> specification!
+        </p>
+      </div>
+
+</section>
+
+          <figure class="media">
+            <a href="/microsoft_edge/mixed-reality-headset.jpg"><img src="/microsoft_edge/mixed-reality-headset.jpg" alt="Microsoft Edge" width="450"></a>
+            <figcaption class="hidden-text">Microsoft Edge</figcaption>
+          </figure>
+
       </div>
     </header>
 
     <main id="main" class="main" role="main">
       <div class="container">
+          <section id="setup" class="section setup" data-section="setup">
+            <h2><a href="#setup">Setup instructions</a></h2>
 
-        <section id="setup" class="section setup" data-section="setup">
-          <h2><a href="#setup">Instructions</a></h2>
-          <ol class="bullets-light">
-            <li>
-              <span>
-                Download the latest <a href="https://www.microsoft.com/en-us/windows/upcoming-features">Windows 10 update</a> to get the latest <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/changelog/desktop/15002/?compareWith=14986">Microsoft Edge</a>.
-              </span>
-            </li>
-            <li><span>Enjoy content!</span></li>
-          </ol>
-          <p><strong>Stay tuned for more details! &nbsp; 🎉</strong></p>
-        </section>
+  <ol class="bullets-light">
+    <li>Ensure that you enable the <a href="https://developer.microsoft.com/en-us/windows/mixed-reality/immersive_headset_setup">Creators Update</a>.</li>
+    <li>Setup either <a href="https://developer.microsoft.com/en-us/windows/mixed-reality/immersive_headset_setup">headset hardware</a>, or <a href="https://developer.microsoft.com/en-us/windows/mixed-reality/Using_the_Windows_Mixed_Reality_simulator.html#enabling_the_windows_mixed_reality_simulator">install simulator</a>.</li>
+    <li>Start Edge browser.</li>
+    <li><span>Enjoy content!</span></li>
+  </ol>
+          </section>
 
-        <section id="info" class="section" data-section="info">
-          <h2><a href="#info">Links</a></h2>
-          <ul class="bullets-light">
-            <li><span><a href="https://arstechnica.com/information-technology/2017/01/webvr-books-and-more-extensions-coming-to-edge-in-creators-update/">VR-heavy Windows 10 Creators Update adds WebVR to Edge <em>(Ars Technica)</em></a></span></li>
-            <li><span><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/changelog/desktop/15002/">Edge adds support for WebVR <em>(Microsoft Developer)</em></a></span></li>
-            <li><span><a href="https://blogs.windows.com/msedgedev/2016/09/09/webvr-in-development-edge/#ljMCoZDHkEYig3gF.97">Bringing WebVR to Microsoft Edge <em>(Microsoft Edge Developer)</em></a></span></li>
-          </ul>
-        </section>
+          <section id="headsets" class="section headsets" data-section="headsets">
+            <h2><a href="#headsets">Supported headsets</a></h2>
 
+  <ul class="bullets-light">
+    <li><span><a href="" itemprop="aboutUrl">Windows Mixed Reality Developer Kit</a></span></li>
+  </ul>
+          </section>
+
+          <section id="demos" class="section demos" data-section="demos">
+            <h2><a href="#demos">Demos</a></h2>
+            <p class="demos-suggest"><a href="/demos/submit">Suggest a demo</a></p>
+
+            <ul data-section="demos" class="matrix grid-flex-container">
+            </ul>
+          </section>
+
+
+  <li><a href="https://blogs.windows.com/msedgedev/2017/04/11/introducing-edgehtml-15/#8e8xdJQ1oybkrxB8.97">What’s new in Microsoft Edge in the Windows 10 Creators Update</a></li>
+  <li><span><a href="https://developer.microsoft.com/en-us/windows/mixed-reality/immersive_headset_setup">Immersive headset setuip</a></span></li>
+  <li><span><a href="https://developer.microsoft.com/en-us/windows/mixed-reality/Using_the_Windows_Mixed_Reality_simulator.html#enabling_the_windows_mixed_reality_simulator">Using the Windows Mixed Reality simulator</a></span></li>
+  <li><span><a href="https://msdn.microsoft.com/en-us/library/mt806281(v=vs.85).aspx">Microsofts WebVR reference</a></span></li>
+  <li><span><a href="https://arstechnica.com/information-technology/2017/01/webvr-books-and-more-extensions-coming-to-edge-in-creators-update/">VR-heavy Windows 10 Creators Update adds WebVR to Edge <em>(Ars Technica)</em></a></span></li>
+  <li><span><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/changelog/desktop/15002/">Edge adds support for WebVR <em>(Microsoft Developer)</em></a></span></li>
+  <li><span><a href="https://blogs.windows.com/msedgedev/2016/09/09/webvr-in-development-edge/#ljMCoZDHkEYig3gF.97">Bringing WebVR to Microsoft Edge <em>(Microsoft Edge Developer)</em></a></span></li>
       </div>
     </main>
 

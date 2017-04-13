@@ -86,64 +86,62 @@
           </section>
         {% endblock %}
 
-        {% if browser.releases %}
-          {% block releases_block %}
-            <section id="releases" class="section releases" data-section="releases">
-              <h2><a href="#releases">Latest version</a></h2>
-              <h3><a href="" itemprop="softwareApplication"></a></h3>
-              <article itemscope itemtype="http://schema.org/SoftwareApplication">
-                <dl>
-                  <dt class="browser-type">Type</dt>
+        {% block releases_block %}
+          <section id="releases" class="section releases" data-section="releases">
+            <h2><a href="#releases">Latest version</a></h2>
+            <h3><a href="" itemprop="softwareApplication"></a></h3>
+            <article itemscope itemtype="http://schema.org/SoftwareApplication">
+              <dl>
+                <dt class="browser-type">Type</dt>
+                <dd>
+                  <span class="applicationSubCategory">Browser Build</span>
+                </dd>
+                {% if browser.downloadUrl %}
+                  <dt class="browser-download">Download</dt>
                   <dd>
-                    <span class="applicationSubCategory">Browser Build</span>
+                    <a class="button button-outlined-approve button-download" href="{{ browser.landingUrl }}" itemprop="downloadUrl" data-download-name="{{ browser.slug }}" data-download-id="{{ browser.releases.latest.buildInfo.buildid }}">Download</a>
                   </dd>
-                  {% if browser.downloadUrl %}
-                    <dt class="browser-download">Download</dt>
-                    <dd>
-                      <a class="button button-outlined-approve button-download" href="{{ browser.landingUrl }}" itemprop="downloadUrl" data-download-name="{{ browser.slug }}" data-download-id="{{ browser.releases.latest.buildInfo.buildid }}">Download</a>
-                    </dd>
+                {% endif %}
+                <dt class="browser-version">Version</dt>
+                <dd>
+                  <span itemprop="version" class="version" content="{{ browser.releases.latest.buildInfo.buildid or browser.releases.latest.version }}">{{ browser.releases.latest.buildInfo.buildid or browser.releases.latest.version }}</span>
+                </dd>
+                {% if browser.releases.latest.dateReleased %}
+                  <dt class="browser-date-published">Date released</dt>
+                  <dd>
+                    <time itemprop="datePublished" datetime="{{ browser.releases.latest.dateReleased.isoString }}" title="{{ browser.releases.latest.dateReleased.isoString }}">
+                      {{ browser.releases.latest.dateReleased.datetimeString }}
+                    </time>
+                  </dd>
+                {% endif %}
+                <dt class="browser-file-size">File size</dt>
+                <dd>
+                  {% if browser.releases.latest.fileSize %}
+                    <span itemprop="fileSize" content="{{ browser.releases.latest.fileSize }}">{{ browser.releases.latest.fileSize }}</span>
+                  {% else %}
+                    <span itemprop="fileSize" content="">Unknown</span>
                   {% endif %}
-                  <dt class="browser-version">Version</dt>
-                  <dd>
-                    <span itemprop="version" class="version" content="{{ browser.releases.latest.buildInfo.buildid or browser.releases.latest.version }}">{{ browser.releases.latest.buildInfo.buildid or browser.releases.latest.version }}</span>
-                  </dd>
-                  {% if browser.releases.latest.dateReleased %}
-                    <dt class="browser-date-published">Date released</dt>
-                    <dd>
-                      <time itemprop="datePublished" datetime="{{ browser.releases.latest.dateReleased.isoString }}" title="{{ browser.releases.latest.dateReleased.isoString }}">
-                        {{ browser.releases.latest.dateReleased.datetimeString }}
-                      </time>
-                    </dd>
+                </dd>
+                <dt class="browser-system-requirements">System requirements</dt>
+                <dd>
+                  <span class="operatingSystems" content="{{ browser.releases.operatingSystem }}">{{ browser.releases.operatingSystem }}</span>
+                  {% if browser.processorRequirements|upper == 'IA64' %}
+                    <span class="processorRequirements">
+                      64-bit
+                    </span>
+                  {% elif browser.processorRequirements|upper == 'IA32' %}
+                    <span class="processorRequirements">
+                      32-bit
+                    </span>
                   {% endif %}
-                  <dt class="browser-file-size">File size</dt>
-                  <dd>
-                    {% if browser.releases.latest.fileSize %}
-                      <span itemprop="fileSize" content="{{ browser.releases.latest.fileSize }}">{{ browser.releases.latest.fileSize }}</span>
-                    {% else %}
-                      <span itemprop="fileSize" content="">Unknown</span>
-                    {% endif %}
-                  </dd>
-                  <dt class="browser-system-requirements">System requirements</dt>
-                  <dd>
-                    <span class="operatingSystems" content="{{ browser.releases.operatingSystem }}">{{ browser.releases.operatingSystem }}</span>
-                    {% if browser.processorRequirements|upper == 'IA64' %}
-                      <span class="processorRequirements">
-                        64-bit
-                      </span>
-                    {% elif browser.processorRequirements|upper == 'IA32' %}
-                      <span class="processorRequirements">
-                        32-bit
-                      </span>
-                    {% endif %}
-                  </dd>
+                </dd>
 
-                  {% block releases %}
-                  {% endblock %}
-                </dl>
-              </article>
-            </section>
-          {% endblock %}
-        {% endif %}
+                {% block releases %}
+                {% endblock %}
+              </dl>
+            </article>
+          </section>
+        {% endblock %}
 
         {% if reports_block %}
           {% block reports_block %}

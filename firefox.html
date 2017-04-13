@@ -59,13 +59,16 @@
 
 
 <section class="notifications" id="notifications">
-        <div class="message message-alert message-pinned" aria-expanded="true" id="message-firefox-1">
+        <div class="message message-alert message-pinned" aria-expanded="true" id="message-firefox-1" data-date-reported="" data-pinned="true">
         <p>
+
             <strong>Warning:</strong> WebVR support in <a href="#releases">Firefox Nightly</a> is experimental and subject to change
         </p>
       </div>
-      <div class="message message-success" aria-expanded="true" id="message-firefox-2">
+      <div class="message message-success" aria-expanded="true" id="message-firefox-2" data-date-reported="1487449625000" style="order: -1">
         <p>
+            <time itemprop="dateReported" datetime="1487449625000">Feb 18, 2017</time>
+
             <a href="/firefox#download">Latest Firefox Nightly update</a> now supports <a href="https://www.oculus.com/rift/#u_0_g">Oculus Touch</a> controllers!
         </p>
       </div>
@@ -173,40 +176,40 @@
             </ul>
           </section>
 
-            <section id="releases" class="section releases" data-section="releases">
-              <h2><a href="#releases">Latest version</a></h2>
-              <h3><a href="" itemprop="softwareApplication"></a></h3>
-              <article itemscope itemtype="http://schema.org/SoftwareApplication">
-                <dl>
-                  <dt class="browser-type">Type</dt>
+          <section id="releases" class="section releases" data-section="releases">
+            <h2><a href="#releases">Latest version</a></h2>
+            <h3><a href="" itemprop="softwareApplication"></a></h3>
+            <article itemscope itemtype="http://schema.org/SoftwareApplication">
+              <dl>
+                <dt class="browser-type">Type</dt>
+                <dd>
+                  <span class="applicationSubCategory">Browser Build</span>
+                </dd>
+                  <dt class="browser-download">Download</dt>
                   <dd>
-                    <span class="applicationSubCategory">Browser Build</span>
+                    <a class="button button-outlined-approve button-download" href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly" itemprop="downloadUrl" data-download-name="firefox" data-download-id="20170308030207">Download</a>
                   </dd>
-                    <dt class="browser-download">Download</dt>
-                    <dd>
-                      <a class="button button-outlined-approve button-download" href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly" itemprop="downloadUrl" data-download-name="firefox" data-download-id="20170308030207">Download</a>
-                    </dd>
-                  <dt class="browser-version">Version</dt>
+                <dt class="browser-version">Version</dt>
+                <dd>
+                  <span itemprop="version" class="version" content="20170308030207">20170308030207</span>
+                </dd>
+                  <dt class="browser-date-published">Date released</dt>
                   <dd>
-                    <span itemprop="version" class="version" content="20170308030207">20170308030207</span>
+                    <time itemprop="datePublished" datetime="2017-03-08T20:38:00.000Z" title="2017-03-08T20:38:00.000Z">
+                      Mar 8, 2017, 12:38 PM
+                    </time>
                   </dd>
-                    <dt class="browser-date-published">Date released</dt>
-                    <dd>
-                      <time itemprop="datePublished" datetime="2017-03-08T20:38:00.000Z" title="2017-03-08T20:38:00.000Z">
-                        Mar 8, 2017, 12:38 PM
-                      </time>
-                    </dd>
-                  <dt class="browser-file-size">File size</dt>
-                  <dd>
-                      <span itemprop="fileSize" content="46 MB">46 MB</span>
-                  </dd>
-                  <dt class="browser-system-requirements">System requirements</dt>
-                  <dd>
-                    <span class="operatingSystems" content=""></span>
-                      <span class="processorRequirements">
-                        64-bit
-                      </span>
-                  </dd>
+                <dt class="browser-file-size">File size</dt>
+                <dd>
+                    <span itemprop="fileSize" content="46 MB">46 MB</span>
+                </dd>
+                <dt class="browser-system-requirements">System requirements</dt>
+                <dd>
+                  <span class="operatingSystems" content=""></span>
+                    <span class="processorRequirements">
+                      64-bit
+                    </span>
+                </dd>
 
   <dt class="browser-authors">Authors</dt>
   <dd class="not-copy">
@@ -231,9 +234,9 @@
 
     </ul>
   </dd>
-                </dl>
-              </article>
-            </section>
+              </dl>
+            </article>
+          </section>
 
       </div>
     </main>
